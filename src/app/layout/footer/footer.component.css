@@ -1,0 +1,7 @@
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    align-self: flex-end;
+}

@@ -1,0 +1,19 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 class="text-center">Posts</h3>
+            <div class="row bg-light">
+                <div *ngFor="let post of posts" class="card my-5 m-auto" style="width: 20rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{ post.title }}</h5>
+                      <p class="card-text">{{ post.body }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>

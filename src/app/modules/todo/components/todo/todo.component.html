@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 class="text-center">Todos</h3>
+            <div class="row bg-light">
+                <ul class="list-group w-100" *ngFor="let todo of todos">
+                    <li class="list-group-item d-flex justify-content-between w-100">
+                        <span [ngClass]="{completedTodo : todo.isComplete}">
+                            {{ todo.title | titlecase }}
+                        </span>
+                        <span [ngClass]="{completedTodo : todo.isComplete}">
+                            {{ todo.date | date }}
+                        </span>
+                        <span>
+                            <input type="checkbox" [checked]="todo.isComplete">
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
